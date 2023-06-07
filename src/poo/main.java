@@ -5,17 +5,19 @@
  */
 package poo;
 
+import poo.EP_1.Servicio.ServicioLibro;
+
+
 /**
  *
  * @author javie
  */
-public class POO {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-    }
+public class main {
     
+    public static void main(String[] args) {
+         
+         ServicioLibro sl = new ServicioLibro();
+         
+         sl.informarLibro(sl.cargarLibro());
+    }    
 }
