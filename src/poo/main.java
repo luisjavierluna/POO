@@ -5,8 +5,9 @@
  */
 package poo;
 
-import poo.EP_1.Servicio.ServicioLibro;
-
+// import poo.EP_1.Servicio.ServicioLibro;
+import poo.EP_2.Entidad.Circunferencia;
+import poo.EP_2.Servicio.ServicioCircunferencia;
 
 /**
  *
@@ -15,9 +16,12 @@ import poo.EP_1.Servicio.ServicioLibro;
 public class main {
     
     public static void main(String[] args) {
-         
-         ServicioLibro sl = new ServicioLibro();
-         
-         sl.informarLibro(sl.cargarLibro());
+        
+        ServicioCircunferencia sc = new ServicioCircunferencia();
+        Circunferencia circ = new Circunferencia(0);
+        
+        System.out.println("Radio: " + sc.crearCircunferencia(circ));
+        System.out.println("Área: " + sc.area(circ.getRadio()));
+        System.out.println("Perímetro: " + sc.perimetro(circ.getRadio()));
     }    
 }
