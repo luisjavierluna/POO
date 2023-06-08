@@ -5,9 +5,7 @@
  */
 package poo;
 
-import poo.EP_3.Operacion;
-import poo.EP_3.ServicioOperacion;
-
+import poo.EP_4.ServicioRectangulo;
 
 /**
  *
@@ -16,14 +14,13 @@ import poo.EP_3.ServicioOperacion;
 public class main {
     
     public static void main(String[] args) {
+        ServicioRectangulo sr = new ServicioRectangulo();
         
-        ServicioOperacion so = new ServicioOperacion();
+        sr.crearRectangulo();
         
-        so.crearOperacion();
-        
-        System.out.println("Suma: " + so.sumar());
-        System.out.println("Resta: " + so.restar());
-        System.out.println("Multiplicación: " + so.multiplicar());
-        System.out.println("División: " + so.dividir());
+        System.out.println("Superficie: " + sr.superficie());
+        System.out.println("Área: " + sr.perimetro());
+        System.out.println("");
+        sr.dibujarRectangulo();
     }    
 }
