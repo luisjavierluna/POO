@@ -5,9 +5,9 @@
  */
 package poo;
 
-// import poo.EP_1.Servicio.ServicioLibro;
-import poo.EP_2.Entidad.Circunferencia;
-import poo.EP_2.Servicio.ServicioCircunferencia;
+import poo.EP_3.Operacion;
+import poo.EP_3.ServicioOperacion;
+
 
 /**
  *
@@ -17,11 +17,13 @@ public class main {
     
     public static void main(String[] args) {
         
-        ServicioCircunferencia sc = new ServicioCircunferencia();
-        Circunferencia circ = new Circunferencia(0);
+        ServicioOperacion so = new ServicioOperacion();
         
-        System.out.println("Radio: " + sc.crearCircunferencia(circ));
-        System.out.println("Área: " + sc.area(circ.getRadio()));
-        System.out.println("Perímetro: " + sc.perimetro(circ.getRadio()));
+        so.crearOperacion();
+        
+        System.out.println("Suma: " + so.sumar());
+        System.out.println("Resta: " + so.restar());
+        System.out.println("Multiplicación: " + so.multiplicar());
+        System.out.println("División: " + so.dividir());
     }    
 }
