@@ -11,34 +11,22 @@ package poo.EP_1.Entidad;
  */
 public class Libro {
 
-    public Libro(String ISBN, String titulo, String autor, int numeroDePaginas) {
-    }
-    
-    public Libro() {
-    }
-    
     private String ISBN;
     private String titulo;
     private String autor;
     private int numeroDePaginas;
+
     
-    // SETTERS
-    public void setISBN(String ISBM) {
-        this.ISBN = ISBM;
-    }
-
-    public void setTitulo(String titulo) {
+    // Constructores
+    public Libro(String ISBN, String titulo, String autor, int numeroDePaginas) {
+        this.ISBN = ISBN;
         this.titulo = titulo;
-    }
-
-    public void setAutor(String autor) {
         this.autor = autor;
-    }
-
-    public void setNumeroDePaginas(int numeroDePaginas) {
         this.numeroDePaginas = numeroDePaginas;
     }
-    
+
+    public Libro() {
+    }
     
     // GETTERS
     public String getISBN() {
@@ -55,5 +43,22 @@ public class Libro {
 
     public int getNumeroDePaginas() {
         return numeroDePaginas;
+    }
+    
+    // SETTERS
+    public void setISBN(String ISBM) {
+        this.ISBN = ISBM;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setNumeroDePaginas(int numeroDePaginas) {
+        this.numeroDePaginas = numeroDePaginas;
     }
 }

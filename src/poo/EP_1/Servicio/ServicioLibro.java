@@ -14,10 +14,9 @@ import poo.EP_1.Entidad.Libro;
  */
 public class ServicioLibro {
     Scanner input = new Scanner(System.in).useDelimiter("\n");
+    Libro libro = new Libro();
     
     public Libro cargarLibro () {
-        Libro libro = new Libro();
-            
         System.out.println("Ingresa el ISBN:");
         libro.setISBN(input.nextLine());
         System.out.println("Ingresa el título:");
@@ -30,13 +29,12 @@ public class ServicioLibro {
         return libro;
     }
     
-    public void informarLibro (Libro libro) {
+    public void informarLibro () {
         System.out.println("");
         System.out.println("El libro tiene los siguientes datos:");
         System.out.println("ISBN: " + libro.getISBN());
         System.out.println("Título: " + libro.getTitulo());
         System.out.println("Autor: " + libro.getAutor());
         System.out.println("Número de páginas: " + libro.getNumeroDePaginas());
-    }
-    
+    }   
 }

@@ -5,7 +5,10 @@
  */
 package poo;
 
+import java.util.Scanner;
 import poo.EP_5.ServicioCuenta;
+import poo.EP_6.ServicioCafetera;
+
 
 /**
  *
@@ -14,26 +17,29 @@ import poo.EP_5.ServicioCuenta;
 public class main {
     
     public static void main(String[] args) {
-        ServicioCuenta sc = new ServicioCuenta();
+        Scanner scan = new Scanner(System.in).useDelimiter("\n");
+        ServicioCafetera sc = new ServicioCafetera();
         
-        sc.crearCuenta();
+        sc.llenarCafetera();
         
-        System.out.println("");
-        sc.consultarDatos();
+        System.out.println("Ingresa el tamaño de la taza");
+        int tamTaza = scan.nextInt();
+        sc.servirTaza(tamTaza);
         
-        System.out.println("");
-        sc.consultarSaldo();
-        
-        System.out.println("");
-        sc.ingresar(10);
-        sc.consultarSaldo();
+        sc.mostrarCantidadActual();
         
         System.out.println("");
-        sc.retirar(20);
-        sc.consultarSaldo();
+        
+        sc.vaciarCafetera();
+        
+        sc.mostrarCantidadActual();
         
         System.out.println("");
-        sc.extraccionRapida();
-        sc.consultarSaldo();
+        
+        System.out.println("Ingresa la cantidad de café a agregar");
+        int cantidadCafe = scan.nextInt();
+        sc.agregarCafe(cantidadCafe);
+        
+        sc.mostrarCantidadActual();
     }    
 }
