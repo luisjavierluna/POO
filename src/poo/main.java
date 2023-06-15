@@ -5,9 +5,8 @@
  */
 package poo;
 
-import java.util.Scanner;
-import poo.EP_8.Cadena;
-import poo.EP_8.ServicioCadena;
+import poo.EP_9.Matematica;
+import poo.EP_9.ServicioMatematica;
 
 /**
  *
@@ -16,66 +15,31 @@ import poo.EP_8.ServicioCadena;
 public class main {
     
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in).useDelimiter("\n");
+        ServicioMatematica sm = new ServicioMatematica();
+        Matematica mat = new Matematica();
         
-        Cadena cadena = new Cadena("", 0);
-        ServicioCadena sc = new ServicioCadena();
+        // mat.setNum1((Math.random() * 10) + 1);
+        // mat.setNum2((Math.random() * 10) + 1);
         
-        do {
-            System.out.println("Ingresa una frase");
-            cadena.setFrase(scan.nextLine());
-            cadena.setLongitud(cadena.getFrase().length());
-            
-            if (cadena.getLongitud() < 1) System.out.println("La frase tiene que tener una longitud mayor a 0, intentalo de nuevo");
-            
-        } while (cadena.getLongitud() < 1);
+        mat.setNum1((Math.random() * 20) - 10);
+        mat.setNum2((Math.random() * 20) - 10);
         
+        System.out.println("Primer número: " + mat.getNum1());
+        System.out.println("Segundo número: " + mat.getNum2());
         
-        // Veces repetido ---------------------------------------
-        // sc.mostrarVocales(cadena.getFrase(), cadena.getLongitud());
-        
-        
-        // Invertir Frase ---------------------------------------
-        // sc.invertirFrase(cadena.getFrase(), cadena.getLongitud());
-        
-        
-        // Veces Repetido ---------------------------------------
-//        String letra;
-//        
-//        do {
-//            System.out.println("Ingresa la letra a buscar");
-//            letra = scan.nextLine();
-//            
-//            if (letra.equals("")) System.out.println("No se ingresó ningún carácter, intentalo de nuevo");
-//        } while (letra.equals(""));
-//        
-//        sc.vecesRepetido(letra, cadena.getFrase(), cadena.getLongitud());
-        
+        // DEVOLVER MAYOR
+//        System.out.println("");
+//        System.out.println(sm.devolverMayor(mat));
 
-        // Comparar Longitud ---------------------------------------
-//        String segundaFrase;
-//        
-//        do {
-//            System.out.println("Ingresa la segunda frase");
-//            segundaFrase = scan.nextLine();
-//            
-//            if (segundaFrase.equals("")) System.out.println("La segunda frase no puede ser una cadena vacía, intentalo de nuevo");
-//        } while (segundaFrase.equals(""));
-//        
-//        sc.compararLongitud(segundaFrase, cadena.getLongitud());
 
-        
-        // Unir Frases ---------------------------------------
-        // sc.unirFrases(segundaFrase, cadena.getFrase());
-        
-        
-        // Remplazar ---------------------------------------
-        // sc.reemplazar(letra, cadena.getFrase(), cadena.getLongitud());
+        // CALCULA POTENCIA
+//        System.out.println("");
+//        System.out.println(sm.calcularPotencia(mat));
 
+
+        // CALCULA RAÍZ
+        System.out.println("");
+        System.out.println(sm.calculaRaiz(mat));        
         
-        // Contiene ---------------------------------------
-//        System.out.println(
-//            sc.contiene(letra, cadena.getFrase(), cadena.getLongitud())
-//        );      
     }
 }
