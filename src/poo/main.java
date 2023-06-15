@@ -5,7 +5,7 @@
  */
 package poo;
 
-import poo.EP_10.ServicioArreglo;
+import java.util.Date;
 
 
 /**
@@ -15,9 +15,23 @@ import poo.EP_10.ServicioArreglo;
 public class main {
     
     public static void main(String[] args) {
-        ServicioArreglo sa = new ServicioArreglo();
+        int dia = 1;
+        int mes = 0;
+        int anio = 100;
         
-        sa.iniciarArregloA();
-        sa.iniciarArregloB();
+        Date fecha = new Date(anio, mes, dia);
+        System.out.println("Fecha: ");
+        System.out.println(fecha);
+        System.out.println("");
+        
+        System.out.println("Fecha actual: ");
+        Date fechaActual = new Date();
+        System.out.println(fechaActual);
+        System.out.println("");
+        
+        int aniosDiferencia = fechaActual.getYear() - fecha.getYear();
+        System.out.println("La diferencia es de " + aniosDiferencia + " años");
+        
+        
     }
 }
