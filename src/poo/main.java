@@ -5,32 +5,25 @@
  */
 package poo;
 
-import java.util.Date;
-
+import poo.EP_12.ServicioPersona;
 
 /**
  *
  * @author javie
  */
 public class main {
-    
     public static void main(String[] args) {
-        int dia = 1;
-        int mes = 0;
-        int anio = 100;
         
-        Date fecha = new Date(anio, mes, dia);
-        System.out.println("Fecha: ");
-        System.out.println(fecha);
-        System.out.println("");
+        ServicioPersona sp = new ServicioPersona();   
         
-        System.out.println("Fecha actual: ");
-        Date fechaActual = new Date();
-        System.out.println(fechaActual);
-        System.out.println("");
+        sp.crearPersona();
         
-        int aniosDiferencia = fechaActual.getYear() - fecha.getYear();
-        System.out.println("La diferencia es de " + aniosDiferencia + " años");
+        System.out.println(
+            sp.menorQue(27, sp.calcularEdad())
+        );
+        
+        sp.mostrarPersona();
+        
         
         
     }
