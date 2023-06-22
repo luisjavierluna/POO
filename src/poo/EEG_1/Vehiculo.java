@@ -3,9 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.EEG_1.Entidad;
-
-import java.util.Date;
+package poo.EEG_1;
 
 /**
  *

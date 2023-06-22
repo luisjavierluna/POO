@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.EP_2.Servicio;
+package poo.EP_2;
 
 import java.util.Scanner;
-import poo.EP_2.Entidad.Circunferencia;
+import poo.EP_2.Circunferencia;
 
 /**
  *

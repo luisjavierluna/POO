@@ -3,10 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.EP_1.Servicio;
+package poo.EP_1;
 
 import java.util.Scanner;
-import poo.EP_1.Entidad.Libro;
 
 /**
  *

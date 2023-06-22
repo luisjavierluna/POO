@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo.EEG_1.Servicio;
+package poo.EEG_1;
 
-import poo.EEG_1.Entidad.Vehiculo;
+import poo.EEG_1.Vehiculo;
 
 /**
  *
