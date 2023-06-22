@@ -6,6 +6,7 @@
 package poo;
 
 import poo.EP_12.ServicioPersona;
+import poo.EP_13.ServicioCurso;
 
 /**
  *
@@ -13,18 +14,10 @@ import poo.EP_12.ServicioPersona;
  */
 public class main {
     public static void main(String[] args) {
+        ServicioCurso sc = new ServicioCurso();
         
-        ServicioPersona sp = new ServicioPersona();   
+        sc.crearCurso();
         
-        sp.crearPersona();
-        
-        System.out.println(
-            sp.menorQue(27, sp.calcularEdad())
-        );
-        
-        sp.mostrarPersona();
-        
-        
-        
+        sc.calcularGananciaSemanal();
     }
 }
