@@ -5,8 +5,7 @@
  */
 package poo;
 
-import poo.EP_12.ServicioPersona;
-import poo.EP_13.ServicioCurso;
+import poo.EP_14.ServicioMovil;
 
 /**
  *
@@ -14,10 +13,8 @@ import poo.EP_13.ServicioCurso;
  */
 public class main {
     public static void main(String[] args) {
-        ServicioCurso sc = new ServicioCurso();
+        ServicioMovil sm = new ServicioMovil();
         
-        sc.crearCurso();
-        
-        sc.calcularGananciaSemanal();
+        sm.cargarCelular();
     }
 }
