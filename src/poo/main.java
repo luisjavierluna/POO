@@ -5,7 +5,7 @@
  */
 package poo;
 
-import poo.EP_14.ServicioMovil;
+import poo.EE_2.ServicioPuntos;
 
 /**
  *
@@ -13,8 +13,9 @@ import poo.EP_14.ServicioMovil;
  */
 public class main {
     public static void main(String[] args) {
-        ServicioMovil sm = new ServicioMovil();
+        ServicioPuntos sp = new ServicioPuntos();
         
-        sm.cargarCelular();
+        sp.crearPuntos();
+        sp.calcularDistancia();
     }
 }
