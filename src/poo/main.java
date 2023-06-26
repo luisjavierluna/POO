@@ -5,7 +5,7 @@
  */
 package poo;
 
-import poo.EE_2.ServicioPuntos;
+import poo.EE_3.ServicioRaices;
 
 /**
  *
@@ -13,9 +13,15 @@ import poo.EE_2.ServicioPuntos;
  */
 public class main {
     public static void main(String[] args) {
-        ServicioPuntos sp = new ServicioPuntos();
+        ServicioRaices sr = new ServicioRaices();
         
-        sp.crearPuntos();
-        sp.calcularDistancia();
+        System.out.println("Discriminante " + sr.getDiscriminante());
+        System.out.println("Tiene dos soluciones " + sr.tieneRaices());
+        System.out.println("Tiene una única solución " + sr.tieneRaiz());
+        
+        System.out.println("");
+        
+        sr.calcular();
+        
     }
 }
