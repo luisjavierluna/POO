@@ -5,7 +5,9 @@
  */
 package poo;
 
-import poo.EE_4.ServicioNIF;
+import poo.EE_5.ServicioMeses;
+
+
 
 /**
  *
@@ -14,8 +16,8 @@ import poo.EE_4.ServicioNIF;
 public class main {
 
     public static void main(String[] args) {
-        ServicioNIF sn = new ServicioNIF();
+        ServicioMeses sm = new ServicioMeses();
         
-        sn.mostrar(sn.crearNif());
+        sm.adivinarMesSecreto();
     }
 }
