@@ -5,8 +5,7 @@
  */
 package poo;
 
-import poo.EE_5.ServicioMeses;
-
+import poo.EE_6.ServicioAhorcado;
 
 
 /**
@@ -14,10 +13,10 @@ import poo.EE_5.ServicioMeses;
  * @author javie
  */
 public class main {
-
     public static void main(String[] args) {
-        ServicioMeses sm = new ServicioMeses();
+        ServicioAhorcado sa = new ServicioAhorcado();
         
-        sm.adivinarMesSecreto();
+        sa.juego();
+        
     }
 }
